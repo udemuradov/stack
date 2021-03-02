@@ -5,10 +5,12 @@
 }
 
 footer {
+  position: relative;
   height: 180px;
   background-color: #FAFAFB;
   z-index: 10;
   box-shadow: 0 0px 5px 1px #b1b1b1;
+  margin-top: 20px;
 }
 
 .footer_about, .footer_anything {
@@ -314,6 +316,32 @@ header .navbar_auth .btn-r:hover {
   justify-content: center;
 }
 
+.item_about {
+  margin-top: 70px;
+}
+
+.item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.item_header p {
+  margin-bottom: 5px;
+}
+
+.item_body-content {
+  height: 500px;
+  font-size: 40px;
+  border: 1px solid #333;
+  padding-top: 200px;
+  text-align: center;
+}
+
 .left-sidebar {
   position: fixed;
   margin-top: 50px;
@@ -479,6 +507,29 @@ nav a .menu_name {
   font-weight: 700;
 }
 
+.news {
+  margin-top: 70px;
+}
+.news_title {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+.news_img {
+  margin-bottom: 20px;
+}
+.news_img img {
+  width: 100%;
+  height: 400px;
+}
+
+.more_news {
+  margin-top: 30px;
+}
+.more_news-title {
+  font-size: 20px;
+}
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -552,7 +603,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right-sidebar {
-  margin-top: 55px;
+  margin-top: 70px;
+}
+.right-sidebar a {
+  font-size: 14px;
+  color: #0077CF;
+}
+.right-sidebar a p {
+  margin-bottom: 10px;
 }
 
 .search-request {
@@ -563,11 +621,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advanced_search {
+  background-color: rgba(179, 211, 234, 0.3);
   margin-top: 110px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.2);
+  border-radius: 5px;
   padding: 30px 10px;
   justify-content: center;
+  transition: 0.3s;
+}
+.advanced_search:hover {
+  box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.2);
 }
 .advanced_search-btn {
   display: flex;
@@ -579,12 +641,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   cursor: pointer;
   margin-bottom: 20px;
-}
-.advanced_search button {
-  background-color: #333;
-  color: #fff;
-  font-weight: 700;
-  padding: 10px 20px;
 }
 
 .btn-blue {
